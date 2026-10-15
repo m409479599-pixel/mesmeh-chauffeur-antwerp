@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ⬇️ وسم إثبات ملكية موقعك في Google Search Console ⬇️ -->
+    <meta name="google-site-verification" content="ضع_كود_التحقق_الخاص_بجوجل_هنا" />
+
+    <title>Mesmeh Chauffeur Services Antwerp | Premium Taxi & Transfer</title>
+    <meta name="description" content="Professionele taxiservice en privé chauffeur in Antwerpen. Transparante tarieven, luxe voertuigen en 24/7 beschikbaarheid.">
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#E6B800',
+                            goldHover: '#C79A00',
+                            dark: '#0F1115',
+                            card: '#181B22',
+                            border: '#2A2E39',
+                            accent: '#F3C623'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Tajawal', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(230, 184, 0, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-gold text-black flex items-center justify-center font-bold text-xl shadow-lg shadow-brand-gold/20">
+                    M
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block">MESMEH</span>
+                    <span class="text-xs text-brand-gold tracking-widest font-semibold uppercase block -mt-1">Chauffeur Antwerp</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#tarieven" class="hover:text-brand-gold transition-colors" data-i18n="nav_rates">Tarieven</a>
+                <a href="#berekenen" class="hover:text-brand-gold transition-colors" data-i18n="nav_calc">Prijs Berekenen</a>
+                <a href="#voertuig" class="hover:text-brand-gold transition-colors" data-i18n="nav_vehicle">Ons Voertuig</a>
+                <a href="#boeken" class="hover:text-brand-gold transition-colors" data-i18n="nav_book">Reserveren</a>
+            </nav>
+
+            <!-- Language Switcher & Call Button -->
+            <div class="flex items-center gap-3">
+                <select id="langSelect" onchange="changeLanguage(this.value)" class="bg-brand-card text-xs text-gray-200 border border-brand-border rounded-lg px-2.5 py-2 focus:outline-none focus:border-brand-gold cursor-pointer">
+                    <option value="nl">🇳🇱 NL</option>
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="ar">🇦🇪 AR</option>
+                </select>
+
+                <a href="tel:+32492392912" class="hidden sm:inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-black font-semibold px-4 py-2 rounded-xl transition-all shadow-md shadow-brand-gold/10 text-sm">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+32 492 392 912</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 px-3.5 py-1.5 rounded-full text-brand-gold text-xs font-semibold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span data-i18n="hero_badge">Officieel Gelicentieerde Taxiservice Antwerpen</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight" data-i18n="hero_title">
+                        Luxe & Betrouwbaar Vervoer in Antwerpen
+                    </h1>
+
+                    <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0" data-i18n="hero_subtitle">
+                        Transparante vaste tarieven, comfortabele ritten en 24/7 service voor al uw stadsritten, luchthavenvervoer en evenementen.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#boeken" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldHover text-black font-bold px-8 py-4 rounded-xl text-center transition-all shadow-lg shadow-brand-gold/20 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span data-i18n="hero_btn_book">Nu Reserveren</span>
+                        </a>
+                        <a href="https://wa.me/32492392912" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl text-center transition-all shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Highlights -->
+                    <div class="pt-8 border-t border-brand-border grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl font-extrabold text-white">24/7</div>
+                            <div class="text-xs text-gray-400" data-i18n="stat_1">Beschikbaarheid</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-brand-gold">€3.50</div>
+                            <div class="text-xs text-gray-400" data-i18n="stat_2">Vanaf / km</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-white">75</div>
+                            <div class="text-xs text-gray-400" data-i18n="stat_3">Ecoscore Toyota</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tariff Card Preview -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-brand-gold/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-brand-border">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Mesmeh Chauffeur</h3>
+                                <p class="text-xs text-gray-400">0019152 – 2060 Antwerpen</p>
+                            </div>
+                            <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs px-2.5 py-1 rounded-lg font-medium" data-i18n="badge_verified">
+                                <i class="fa-solid fa-check-circle mr-1"></i> Officieel Tarief
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-2xl bg-brand-dark/60 border border-brand-border flex justify-between items-center">
+                                <div>
+                                    <div class="text-sm font-bold text-white" data-i18n="tariff_a_title">Tarief A (Korte Rit)</div>
+                                    <div class="text-xs text-gray-400" data-i18n="tariff_a_sub">Incl. 3km + 7min</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-lg font-extrabold text-brand-gold">€25,00</div>
+                                    <div class="text-[10px] text-gray-400">Startprijs</div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-brand-dark/60 border border-brand-border flex justify-between items-center">
+                                <div>
+                                    <div class="text-sm font-bold text-white" data-i18n="tariff_b_title">Tarief B (Standaard)</div>
+                                    <div class="text-xs text-gray-400" data-i18n="tariff_b_sub">Standaard Stadsrit</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-lg font-extrabold text-brand-gold">€9,00</div>
+                                    <div class="text-[10px] text-gray-400">Start + €3,50/km</div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-brand-dark/60 border border-brand-border flex justify-between items-center">
+                                <div>
+                                    <div class="text-sm font-bold text-white" data-i18n="tariff_c_title">Tarief C (Weekend & Feest)</div>
+                                    <div class="text-xs text-gray-400" data-i18n="tariff_c_sub">Weekend - Festivals</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-lg font-extrabold text-brand-gold">€10,00</div>
+                                    <div class="text-[10px] text-gray-400">Start + €4,00/km</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-brand-border text-center">
+                            <a href="#tarieven" class="text-xs text-brand-gold hover:underline font-semibold" data-i18n="view_full_rates">Bekijk volledige tarieven & details →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fare Calculator Section -->
+    <section id="berekenen" class="py-20 bg-brand-card/50 border-y border-brand-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-white" data-i18n="calc_title">Prijs Berekenen</h2>
+                <p class="text-gray-400 mt-2 text-sm" data-i18n="calc_subtitle">Schat eenvoudig de kosten van uw rit op basis van de officiële tarieven.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-10 shadow-xl">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="calc_tariff_label">Kies Tarief</label>
+                        <select id="calcTariff" onchange="calculateFare()" class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                            <option value="A">Tarief A (Korte rit - Incl. 3km/7min)</option>
+                            <option value="B" selected>Tarief B (Standaard - €9 start + €3.50/km)</option>
+                            <option value="C">Tarief C (Weekend/Feest - €10 start + €4.00/km)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="calc_dist_label">Afstand (in km)</label>
+                        <input type="number" id="calcDistance" value="10" min="1" max="500" oninput="calculateFare()" class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="calc_wait_label">Wachttijd (in minuten - optioneel)</label>
+                        <input type="number" id="calcWait" value="0" min="0" max="300" oninput="calculateFare()" class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+                </div>
+
+                <!-- Result Box -->
+                <div class="mt-8 p-6 bg-brand-dark rounded-2xl border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs text-gray-400 block" data-i18n="calc_est_total">Geschatte Totaalprijs</span>
+                        <span class="text-xs text-gray-500" data-i18n="calc_note">*Indicatieve prijs op basis van geselecteerde tariefelementen</span>
+                    </div>
+                    <div class="text-center sm:text-right">
+                        <span id="calcResult" class="text-4xl font-extrabold text-brand-gold">€44,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Tariffs Detail Section -->
+    <section id="tarieven" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white" data-i18n="rates_title">Officieel Tarievenoverzicht</h2>
+                <p class="text-gray-400 mt-2 text-sm" data-i18n="rates_subtitle">Goedgekeurde tariefelementen conform de regelgeving in Antwerpen.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card A -->
+                <div class="bg-brand-card border border-brand-border rounded-3xl p-8 flex flex-col justify-between hover:border-brand-gold/50 transition-all">
+                    <div>
+                        <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-2">Tarief A</div>
+                        <h3 class="text-2xl font-bold text-white mb-4" data-i18n="rates_card_a_head">Korte Rit</h3>
+                        <p class="text-gray-400 text-sm mb-6" data-i18n="rates_card_a_desc">Ideaal voor snelle ritten binnen het stadscentrum.</p>
+                        
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€25,00</strong> Startprijs</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span>Inclusief <strong class="text-white">3 km + 7 min</strong></span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€3,50</strong> per km (na 3km)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€75,00</strong> Wachtprijs / uur</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#boeken" class="w-full bg-brand-dark hover:bg-brand-border text-white text-center font-semibold py-3 rounded-xl transition-all border border-brand-border text-sm" data-i18n="btn_choose">Kies Tarief A</a>
+                </div>
+
+                <!-- Card B -->
+                <div class="bg-brand-card border-2 border-brand-gold rounded-3xl p-8 flex flex-col justify-between relative shadow-xl shadow-brand-gold/5">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-gold text-black text-[11px] font-extrabold uppercase px-3 py-1 rounded-full" data-i18n="popular_tag">Meest Gekozen</div>
+                    <div>
+                        <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-2">Tarief B</div>
+                        <h3 class="text-2xl font-bold text-white mb-4" data-i18n="rates_card_b_head">Standaard Rit</h3>
+                        <p class="text-gray-400 text-sm mb-6" data-i18n="rates_card_b_desc">Voor alle reguliere stads- en regionale ritten.</p>
+                        
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€9,00</strong> Startprijs</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€3,50</strong> per km</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€75,00</strong> Wachtprijs / uur</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span>Transparante meterberekening</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#boeken" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black text-center font-bold py-3 rounded-xl transition-all shadow-md text-sm" data-i18n="btn_choose">Kies Tarief B</a>
+                </div>
+
+                <!-- Card C -->
+                <div class="bg-brand-card border border-brand-border rounded-3xl p-8 flex flex-col justify-between hover:border-brand-gold/50 transition-all">
+                    <div>
+                        <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-2">Tarief C</div>
+                        <h3 class="text-2xl font-bold text-white mb-4" data-i18n="rates_card_c_head">Weekend & Feest</h3>
+                        <p class="text-gray-400 text-sm mb-6" data-i18n="rates_card_c_desc">Nachtritten, weekenden en festivalvervoer.</p>
+                        
+                        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€10,00</strong> Startprijs</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€4,00</strong> per km</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span><strong class="text-white">€75,00</strong> Wachtprijs / uur</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-brand-gold"></i>
+                                <span>Geldig op feestdagen & festivals</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#boeken" class="w-full bg-brand-dark hover:bg-brand-border text-white text-center font-semibold py-3 rounded-xl transition-all border border-brand-border text-sm" data-i18n="btn_choose">Kies Tarief C</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Section -->
+    <section id="voertuig" class="py-20 bg-brand-card/50 border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-gold font-bold text-xs uppercase tracking-widest" data-i18n="vehicle_sub">Comfort & Veiligheid</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-2 mb-6" data-i18n="vehicle_title">Onze Geautoriseerde Taxi</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6" data-i18n="vehicle_desc">
+                        U reist in een moderne, goed onderhouden zwarte Toyota. Dit voertuig voldoet aan alle strengste milieueisen van de stad Antwerpen met een hoge ecoscore.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border">
+                            <i class="fa-solid fa-car text-brand-gold text-xl mb-2"></i>
+                            <div class="text-sm font-bold text-white">TOYOTA</div>
+                            <div class="text-xs text-gray-400" data-i18n="veh_model">Zwart Exterieur</div>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border">
+                            <i class="fa-solid fa-leaf text-emerald-400 text-xl mb-2"></i>
+                            <div class="text-sm font-bold text-white">Ecoscore: 75</div>
+                            <div class="text-xs text-gray-400" data-i18n="veh_eco">Milieuvriendelijk</div>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border">
+                            <i class="fa-solid fa-couch text-brand-gold text-xl mb-2"></i>
+                            <div class="text-sm font-bold text-white" data-i18n="veh_comfort_head">Luxe Interieur</div>
+                            <div class="text-xs text-gray-400" data-i18n="veh_comfort_sub">Ruim & Schoon</div>
+                        </div>
+                        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border">
+                            <i class="fa-solid fa-id-card text-brand-gold text-xl mb-2"></i>
+                            <div class="text-sm font-bold text-white" data-i18n="veh_lic_head">Gelicentieerd</div>
+                            <div class="text-xs text-gray-400" data-i18n="veh_lic_sub">Stad Antwerpen</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-gradient-to-tr from-brand-gold/20 to-transparent rounded-3xl p-1">
+                        <div class="bg-brand-card rounded-3xl p-8 border border-brand-border text-center">
+                            <i class="fa-solid fa-taxi text-7xl text-brand-gold mb-6 block"></i>
+                            <h3 class="text-xl font-bold text-white">Toyota Taxi Antwerp</h3>
+                            <p class="text-xs text-gray-400 mt-2">Kleur: Zwart (ZWART)</p>
+                            <p class="text-xs text-gray-400">Vergunning geldig vanaf: 13/05</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="boeken" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-white" data-i18n="book_title">Reserveer Uw Rit</h2>
+                <p class="text-gray-400 mt-2 text-sm" data-i18n="book_subtitle">Vul uw gegevens in voor een directe bevestiging via WhatsApp of E-mail.</p>
+            </div>
+
+            <form id="bookingForm" onsubmit="submitBooking(event)" class="bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-10 shadow-xl space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="form_name">Naam</label>
+                        <input type="text" id="custName" required placeholder="Uw naam" class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="form_phone">Telefoonnummer</label>
+                        <input type="tel" id="custPhone" required placeholder="+32 ..." class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="form_pickup">Ophaallocatie</label>
+                        <input type="text" id="pickupLoc" required placeholder="Adres in Antwerpen..." class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="form_drop">Bestemming</label>
+                        <input type="text" id="dropLoc" required placeholder="Bestemmingsadres..." class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="form_date">Datum & Tijd</label>
+                        <input type="datetime-local" id="rideTime" required class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2" data-i18n="form_passengers">Aantal Passagiers</label>
+                        <select id="passengers" class="w-full bg-brand-dark text-white border border-brand-border rounded-xl p-3.5 focus:outline-none focus:border-brand-gold text-sm">
+                            <option value="1">1 Passagier</option>
+                            <option value="2">2 Passagiers</option>
+                            <option value="3">3 Passagiers</option>
+                            <option value="4">4 Passagiers</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black font-extrabold py-4 rounded-xl transition-all shadow-lg shadow-brand-gold/20 flex items-center justify-center gap-3 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span data-i18n="form_btn">Verstuur Reservering via WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="grid sm:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-3">Mesmeh Chauffeur</h4>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        0019152 – 2060 Antwerpen, België.<br>
+                        Erkende taxiservice voor betrouwbaar vervoer.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3" data-i18n="foot_contact">Contact</h4>
+                    <p class="text-xs text-gray-400 space-y-1">
+                        <a href="tel:+32492392912" class="hover:text-brand-gold block">+32 (0) 492 392 912</a>
+                        <a href="mailto:Karammesmeh98@gmail.com" class="hover:text-brand-gold block">Karammesmeh98@gmail.com</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3" data-i18n="foot_legal">Informatie</h4>
+                    <p class="text-xs text-gray-400 leading-relaxed" data-i18n="foot_police">
+                        Klachten of vragen? Neem contact op met de politie via taxi@antwerpen.be
+                    </p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-brand-border text-center text-xs text-gray-500">
+                © 2026 Mesmeh Chauffeur Antwerp. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translations & JavaScript -->
+    <script>
+        const translations = {
+            nl: {
+                nav_rates: "Tarieven",
+                nav_calc: "Prijs Berekenen",
+                nav_vehicle: "Ons Voertuig",
+                nav_book: "Reserveren",
+                hero_badge: "Officieel Gelicentieerde Taxiservice Antwerpen",
+                hero_title: "Luxe & Betrouwbaar Vervoer in Antwerpen",
+                hero_subtitle: "Transparante vaste tarieven, comfortabele ritten en 24/7 service voor al uw stadsritten, luchthavenvervoer en evenementen.",
+                hero_btn_book: "Nu Reserveren",
+                stat_1: "Beschikbaarheid",
+                stat_2: "Vanaf / km",
+                stat_3: "Ecoscore Toyota",
+                badge_verified: "Officieel Tarief",
+                tariff_a_title: "Tarief A (Korte Rit)",
+                tariff_a_sub: "Incl. 3km + 7min",
+                tariff_b_title: "Tarief B (Standaard)",
+                tariff_b_sub: "Standaard Stadsrit",
+                tariff_c_title: "Tarief C (Weekend & Feest)",
+                tariff_c_sub: "Weekend - Festivals",
+                view_full_rates: "Bekijk volledige tarieven & details →",
+                calc_title: "Prijs Berekenen",
+                calc_subtitle: "Schat eenvoudig de kosten van uw rit op basis van de officiële tarieven.",
+                calc_tariff_label: "Kies Tarief",
+                calc_dist_label: "Afstand (in km)",
+                calc_wait_label: "Wachttijd (in minuten - optioneel)",
+                calc_est_total: "Geschatte Totaalprijs",
+                calc_note: "*Indicatieve prijs op basis van geselecteerde tariefelementen",
+                rates_title: "Officieel Tarievenoverzicht",
+                rates_subtitle: "Goedgekeurde tariefelementen conform de regelgeving in Antwerpen.",
+                rates_card_a_head: "Korte Rit",
+                rates_card_a_desc: "Ideaal voor snelle ritten binnen het stadscentrum.",
+                rates_card_b_head: "Standaard Rit",
+                rates_card_b_desc: "Voor alle reguliere stads- en regionale ritten.",
+                rates_card_c_head: "Weekend & Feest",
+                rates_card_c_desc: "Nachtritten, weekenden en festivalvervoer.",
+                popular_tag: "Meest Gekozen",
+                btn_choose: "Kies Tarief",
+                vehicle_sub: "Comfort & Veiligheid",
+                vehicle_title: "Onze Geautoriseerde Taxi",
+                vehicle_desc: "U reist in een moderne, goed onderhouden zwarte Toyota. Dit voertuig voldoet aan alle strengste milieueisen van de stad Antwerpen met een hoge ecoscore.",
+                veh_model: "Zwart Exterieur",
+                veh_eco: "Milieuvriendelijk",
+                veh_comfort_head: "Luxe Interieur",
+                veh_comfort_sub: "Ruim & Schoon",
+                veh_lic_head: "Gelicentieerd",
+                veh_lic_sub: "Stad Antwerpen",
+                book_title: "Reserveer Uw Rit",
+                book_subtitle: "Vul uw gegevens in voor een directe bevestiging via WhatsApp of E-mail.",
+                form_name: "Naam",
+                form_phone: "Telefoonnummer",
+                form_pickup: "Ophaallocatie",
+                form_drop: "Bestemming",
+                form_date: "Datum & Tijd",
+                form_passengers: "Aantal Passagiers",
+                form_btn: "Verstuur Reservering via WhatsApp",
+                foot_contact: "Contact",
+                foot_legal: "Informatie",
+                foot_police: "Klachten of vragen? Neem contact op met de politie via taxi@antwerpen.be"
+            },
+            en: {
+                nav_rates: "Rates",
+                nav_calc: "Calculate Fare",
+                nav_vehicle: "Our Vehicle",
+                nav_book: "Book Now",
+                hero_badge: "Officially Licensed Taxi Service Antwerp",
+                hero_title: "Luxury & Reliable Transport in Antwerp",
+                hero_subtitle: "Transparent fixed rates, comfortable rides, and 24/7 service for all your city trips, airport transfers, and events.",
+                hero_btn_book: "Book Now",
+                stat_1: "Availability",
+                stat_2: "From / km",
+                stat_3: "Toyota Ecoscore",
+                badge_verified: "Official Rate",
+                tariff_a_title: "Tariff A (Short Ride)",
+                tariff_a_sub: "Incl. 3km + 7min",
+                tariff_b_title: "Tariff B (Standard)",
+                tariff_b_sub: "Standard City Ride",
+                tariff_c_title: "Tariff C (Weekend & Event)",
+                tariff_c_sub: "Weekend - Festivals",
+                view_full_rates: "View full rates & details →",
+                calc_title: "Calculate Fare",
+                calc_subtitle: "Easily estimate your ride cost based on official tariffs.",
+                calc_tariff_label: "Select Tariff",
+                calc_dist_label: "Distance (in km)",
+                calc_wait_label: "Waiting Time (in minutes - optional)",
+                calc_est_total: "Estimated Total Price",
+                calc_note: "*Indicative price based on selected tariff elements",
+                rates_title: "Official Tariff Overview",
+                rates_subtitle: "Approved tariff elements according to Antwerp regulations.",
+                rates_card_a_head: "Short Ride",
+                rates_card_a_desc: "Ideal for quick rides within the city center.",
+                rates_card_b_head: "Standard Ride",
+                rates_card_b_desc: "For all regular city and regional trips.",
+                rates_card_c_head: "Weekend & Event",
+                rates_card_c_desc: "Night rides, weekends, and festival transport.",
+                popular_tag: "Most Popular",
+                btn_choose: "Select Tariff",
+                vehicle_sub: "Comfort & Safety",
+                vehicle_title: "Our Authorized Taxi",
+                vehicle_desc: "You travel in a modern, well-maintained black Toyota. This vehicle meets all strict environmental requirements of the city of Antwerp with a high ecoscore.",
+                veh_model: "Black Exterior",
+                veh_eco: "Eco-Friendly",
+                veh_comfort_head: "Luxury Interior",
+                veh_comfort_sub: "Spacious & Clean",
+                veh_lic_head: "Licensed",
+                veh_lic_sub: "City of Antwerp",
+                book_title: "Book Your Ride",
+                book_subtitle: "Fill in your details for instant confirmation via WhatsApp or Email.",
+                form_name: "Name",
+                form_phone: "Phone Number",
+                form_pickup: "Pickup Location",
+                form_drop: "Destination",
+                form_date: "Date & Time",
+                form_passengers: "Passengers",
+                form_btn: "Send Booking via WhatsApp",
+                foot_contact: "Contact",
+                foot_legal: "Information",
+                foot_police: "Complaints or questions? Contact police via taxi@antwerpen.be"
+            },
+            ar: {
+                nav_rates: "التسعيرة",
+                nav_calc: "حساب السعر",
+                nav_vehicle: "السيارة",
+                nav_book: "حجز رحلة",
+                hero_badge: "خدمة تكسي مرخصة رسمياً في أنتويرب",
+                hero_title: "تنقل فاخر وآمن في مدينة أنتويرب",
+                hero_subtitle: "أسعار شفافة ومحددة، رحلات مريحة وخدمة 24/7 لجميع التنقلات، التوصيل للمطارات والفعاليات.",
+                hero_btn_book: "احجز الآن",
+                stat_1: "التوفر",
+                stat_2: "من / كم",
+                stat_3: "مؤشر البيئة",
+                badge_verified: "تسعيرة رسمية",
+                tariff_a_title: "التعريفة أ (رحلة قصيرة)",
+                tariff_a_sub: "تشمل 3 كم + 7 دقائق",
+                tariff_b_title: "التعريفة ب (قياسي)",
+                tariff_b_sub: "رحلة يومية عادية",
+                tariff_c_title: "التعريفة ج (عطل ومناسبات)",
+                tariff_c_sub: "عطلة نهاية الأسبوع والمهرجانات",
+                view_full_rates: "عرض كافة التفاصيل والتسعيرات ←",
+                calc_title: "حاسبة الأسعار التفاعلية",
+                calc_subtitle: "احسب التكلفة التقديرية لرحلتك بسهولة بناءً على التعريفات الرسمية.",
+                calc_tariff_label: "اختر التعريفة",
+                calc_dist_label: "المسافة (بالكيلومتر)",
+                calc_wait_label: "وقت الانتظار (بالدقائق - اختياري)",
+                calc_est_total: "السعر التقديري الإجمالي",
+                calc_note: "*سعر استدلالي بناءً على عناصر التعريفة المحددة",
+                rates_title: "جدول الأسعار الرسمي",
+                rates_subtitle: "تعريفات معتمدة وفقاً للقوانين واللوائح الرسمية في أنتويرب.",
+                rates_card_a_head: "رحلة قصيرة",
+                rates_card_a_desc: "مثالية للرحلات السريعة داخل مركز المدينة.",
+                rates_card_b_head: "رحلة قياسية",
+                rates_card_b_desc: "مناسبة لجميع التنقلات اليومية والداخلية.",
+                rates_card_c_head: "العطل والمهرجانات",
+                rates_card_c_desc: "للرحلات الليلية، عطلة نهاية الأسبوع والمناسبات.",
+                popular_tag: "الأكثر طلباً",
+                btn_choose: "اختيار التعريفة",
+                vehicle_sub: "الراحة والأمان",
+                vehicle_title: "سيارتنا المرخصة",
+                vehicle_desc: "تسافر في سيارة تويوتا سوداء حديثة ومجهزة بالكامل، تلبي أعلى المعايير البيئية لمدينة أنتويرب بمؤشر صديق للبيئة مرتفع.",
+                veh_model: "هيكل أسود ملكي",
+                veh_eco: "صديقة للبيئة",
+                veh_comfort_head: "قصورة فاخرة",
+                veh_comfort_sub: "واسعة ونظيفة",
+                veh_lic_head: "مرخصة رسمياً",
+                veh_lic_sub: "بلدية أنتويرب",
+                book_title: "احجز رحلتك الآن",
+                book_subtitle: "أدخل بيانات رحلتك لتأكيد الحجز فوراً عبر واتساب.",
+                form_name: "الاسم الكامل",
+                form_phone: "رقم الهاتف",
+                form_pickup: "مكان الانطلاق",
+                form_drop: "الوجهة",
+                form_date: "التاريخ والوقت",
+                form_passengers: "عدد الركاب",
+                form_btn: "إرسال الحجز عبر WhatsApp",
+                foot_contact: "التواصل",
+                foot_legal: "معلومات قانونية",
+                foot_police: "للشكاوى أو الاستفسارات، يمكن التواصل مع الشرطة عبر taxi@antwerpen.be"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            
+            if (lang === 'ar') {
+                document.body.classList.add('font-arabic');
+            } else {
+                document.body.classList.remove('font-arabic');
+            }
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        function calculateFare() {
+            const tariff = document.getElementById('calcTariff').value;
+            const distance = parseFloat(document.getElementById('calcDistance').value) || 0;
+            const waitMinutes = parseFloat(document.getElementById('calcWait').value) || 0;
+
+            let total = 0;
+            const waitCost = (waitMinutes / 60) * 75;
+
+            if (tariff === 'A') {
+                const extraKm = Math.max(0, distance - 3);
+                total = 25.00 + (extraKm * 3.50) + waitCost;
+            } else if (tariff === 'B') {
+                total = 9.00 + (distance * 3.50) + waitCost;
+            } else if (tariff === 'C') {
+                total = 10.00 + (distance * 4.00) + waitCost;
+            }
+
+            document.getElementById('calcResult').textContent = `€${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function submitBooking(event) {
+            event.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const pickup = document.getElementById('pickupLoc').value;
+            const drop = document.getElementById('dropLoc').value;
+            const time = document.getElementById('rideTime').value;
+            const pass = document.getElementById('passengers').value;
+
+            const text = `السلام عليكم / Hallo, %0A%0A*حجز رحلة جديد / Nieuwe Boeking:*%0A👤 *الاسم:* ${encodeURIComponent(name)}%0A📞 *الهاتف:* ${encodeURIComponent(phone)}%0A📍 *من:* ${encodeURIComponent(pickup)}%0A🏁 *إلى:* ${encodeURIComponent(drop)}%0A📅 *التاريخ والوقت:* ${encodeURIComponent(time)}%0A👥 *الركاب:* ${encodeURIComponent(pass)}`;
+
+            window.open(`https://wa.me/32492392912?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
